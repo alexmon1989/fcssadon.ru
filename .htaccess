@@ -1,0 +1,20 @@
+# Заголовок Cache-Control
+<IfModule mod_headers.c>
+        Header append Cache-Control "no-store, no-cache, must-revalidate"
+</IfModule>
+ 
+# Заголовок Expires
+<IfModule mod_expires.c>
+        ExpiresActive On ExpiresDefault "now"
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+
+    # Send request to the subfolder, if its not a real file, folder or it's a root request
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d [OR]
+    RewriteCond $1 ^$
+
+    RewriteRule ^(.*)$ /shahter/public [QSA,L]
+</IfModule>

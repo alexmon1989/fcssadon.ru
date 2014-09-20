@@ -1,0 +1,6 @@
+fuel/app/logs/*/*/*
+fuel/app/cache/*/*
+nbproject/*
+composer.json
+composer.lock
+composer.phar

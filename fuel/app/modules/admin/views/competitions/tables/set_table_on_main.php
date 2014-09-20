@@ -1,0 +1,1 @@
+<?php echo $result == TRUE ? '1' : '0'; ?>
