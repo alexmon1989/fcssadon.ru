@@ -118,7 +118,7 @@ class Controller_Widgets extends Controller_Base
                 ->where('team_1_id', \Config::get('main_team_id'))
                 ->or_where('team_2_id', \Config::get('main_team_id'))
                 ->where_close()
-                ->where('date', '>=', time())
+                //->where('date', '>=', time())
                 ->where('status_id', '=', 1) // матч не начался
                 ->order_by('id', 'ASC')
                 ->limit(1)

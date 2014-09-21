@@ -5,6 +5,7 @@ return array(
 	
 	'hello(/:name)?' => array('welcome/hello', 'name' => 'hello'),
     
+        'news' => 'main/articles/news/index',
         'news/shahter' => 'main/articles/news/index',
         'news/shahter/page/(:num)' => 'main/articles/news/index/$1',
         'news/shahter/view/(:num)' => 'main/articles/news/view/$1',

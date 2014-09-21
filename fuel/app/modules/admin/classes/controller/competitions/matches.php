@@ -154,21 +154,21 @@ class Controller_Competitions_Matches extends Controller_Admin
 
     public function action_delete($id = null)
     {
-            is_null($id) and Response::redirect('matches');
+            is_null($id) and \Response::redirect('matches');
 
-            if ($match = Model_Match::find($id))
+            if ($match = \Model_Match::find($id))
             {
                     $match->delete();
 
-                    Session::set_flash('success', 'Deleted match #'.$id);
+                    \Session::set_flash('success', 'Матч удалён.');
             }
 
             else
             {
-                    Session::set_flash('error', 'Could not delete match #'.$id);
+                    \Session::set_flash('error', 'Could not delete match #'.$id);
             }
 
-            Response::redirect('matches');
+            \Response::redirect('admin/competitions/matches');
 
     }
     

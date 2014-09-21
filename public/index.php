@@ -9,7 +9,6 @@
  * @copyright  2010 - 2013 Fuel Development Team
  * @link       http://fuelphp.com
  */
-
 /**
  * Set error reporting and display errors settings.  You will want to change these when in production.
  */
@@ -24,17 +23,17 @@ define('DOCROOT', __DIR__.DIRECTORY_SEPARATOR);
 /**
  * Path to the application directory.
  */
-define('APPPATH', realpath(__DIR__.'/../fuel_fcssadon/app/').DIRECTORY_SEPARATOR);
+define('APPPATH', realpath(__DIR__.'/../fuel/app/').DIRECTORY_SEPARATOR);
 
 /**
  * Path to the default packages directory.
  */
-define('PKGPATH', realpath(__DIR__.'/../fuel_fcssadon/packages/').DIRECTORY_SEPARATOR);
+define('PKGPATH', realpath(__DIR__.'/../fuel/packages/').DIRECTORY_SEPARATOR);
 
 /**
  * The path to the framework core.
  */
-define('COREPATH', realpath(__DIR__.'/../fuel_fcssadon/core/').DIRECTORY_SEPARATOR);
+define('COREPATH', realpath(__DIR__.'/../fuel/core/').DIRECTORY_SEPARATOR);
 
 // Get the start time and memory for use later
 defined('FUEL_START_TIME') or define('FUEL_START_TIME', microtime(true));
