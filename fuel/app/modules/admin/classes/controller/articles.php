@@ -91,6 +91,7 @@ class Controller_Articles extends Controller_Admin
                     'preview' => \Input::post('preview'),
                     'full_text' => \Input::post('full_text'),
                     'category_id' => \Input::post('category_id'),
+                    'on_main_page' => \Input::post('on_main_page', 0),
                     'vk_comments_count' => 0
                 ));
                 $article->save();
@@ -134,6 +135,7 @@ class Controller_Articles extends Controller_Admin
             {
                 $article->title = \Input::post('title');
                 $article->category_id = \Input::post('category_id');  
+                $article->on_main_page = \Input::post('on_main_page', 0);  
                 $article->preview = \Input::post('preview');
                 $article->full_text = \Input::post('full_text');
 
@@ -156,6 +158,7 @@ class Controller_Articles extends Controller_Admin
                 {
                     $article->title = $val->validated('title');
                     $article->category_id = $val->validated('category_id');  
+                    $article->on_main_page = $val->validated('on_main_page');  
                     $article->preview = $val->validated('preview');
                     $article->full_text = $val->validated('full_text');
 

@@ -34,6 +34,7 @@ return array(
 				25 => '026_add_created_at_updated_at_to_staff',
 				26 => '027_add_vk_comments_count_to_articles',
 				27 => '028_add_vk_comments_count_to_matches',
+				28 => '029_add_on_main_page_to_articles',
 			),
 		),
 		'module' => 

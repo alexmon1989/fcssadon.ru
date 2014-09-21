@@ -39,7 +39,7 @@
                 <a href="#" onclick="sortArticles('category.value', 'asc'); return false;"><span id="span-show-filters" class="glyphicon glyphicon-arrow-down"></span></a>
                 <a href="#" onclick="sortArticles('category.value', 'desc'); return false;"><span id="span-show-filters" class="glyphicon glyphicon-arrow-up"></span></a>
             </th>
-            <th>
+            <th width="15%">
                 Дата создания&nbsp;
                 <a href="#" onclick="sortArticles('created_at', 'asc'); return false;"><span id="span-show-filters" class="glyphicon glyphicon-arrow-down"></span></a>
                 <a href="#" onclick="sortArticles('created_at', 'desc'); return false;"><span id="span-show-filters" class="glyphicon glyphicon-arrow-up"></span></a></th>

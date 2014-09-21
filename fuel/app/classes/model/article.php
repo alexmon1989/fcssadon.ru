@@ -9,7 +9,8 @@ class Model_Article extends \Orm\Model
             'category_id',
             'created_at',
             'updated_at',
-            'vk_comments_count'
+            'vk_comments_count',
+            'on_main_page'
     );
 
     protected static $_observers = array(
@@ -40,6 +41,7 @@ class Model_Article extends \Orm\Model
             $val->add_field('title', 'Название', 'required|max_length[255]');
             $val->add_field('full_text', 'Текст', 'required');
             $val->add_field('category_id', 'Категория', 'required|valid_string[numeric]');
+            $val->add_field('on_main_page', 'На главной', 'valid_string[numeric]');
 
             return $val;
     }

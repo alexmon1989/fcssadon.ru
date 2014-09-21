@@ -21,6 +21,7 @@ class Controller_Main extends Controller_Base
         // Три последних новости
         $data['news'] = \Model_Article::query()
                 ->where('category_id', '=', 1)
+                ->or_where('on_main_page', '=', 1)
                 ->order_by('id', 'DESC')
                 ->limit(6)
                 ->get();

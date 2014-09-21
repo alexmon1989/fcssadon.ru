@@ -18,7 +18,7 @@
 			<th>Название</th>
 			<th>Счёт</th>
 			<th>Создано</th>
-			<th>&nbsp;</th>
+			<th width="10%">&nbsp;</th>
 		</tr>
 	</thead>
         <tfoot>
