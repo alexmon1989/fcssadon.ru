@@ -18,10 +18,10 @@ class Controller_Main extends Controller_Base
      */
     public function action_index()
     {
-        // Три последних новости
+        // Статьи на главной
         $data['news'] = \Model_Article::query()
-                ->where('category_id', '=', 1)
-                ->or_where('on_main_page', '=', 1)
+                //->where('category_id', '=', 1)
+                ->where('on_main_page', '=', 1)
                 ->order_by('id', 'DESC')
                 ->limit(6)
                 ->get();
