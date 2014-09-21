@@ -34,7 +34,7 @@
                 <a href="#" onclick="sortArticles('title', 'asc'); return false;"><span id="span-show-filters" class="glyphicon glyphicon-arrow-down"></span></a>
                 <a href="#" onclick="sortArticles('title', 'desc'); return false;"><span id="span-show-filters" class="glyphicon glyphicon-arrow-up"></span></a>
             </th>
-			<th>
+			<th width="15%">
                 Категория&nbsp;
                 <a href="#" onclick="sortArticles('category.value', 'asc'); return false;"><span id="span-show-filters" class="glyphicon glyphicon-arrow-down"></span></a>
                 <a href="#" onclick="sortArticles('category.value', 'desc'); return false;"><span id="span-show-filters" class="glyphicon glyphicon-arrow-up"></span></a>
